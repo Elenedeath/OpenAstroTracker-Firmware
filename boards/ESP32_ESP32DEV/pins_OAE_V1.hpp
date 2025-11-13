@@ -81,6 +81,20 @@
     #define AZ_EN_PIN 32  // Enable
 #endif
 
+#ifndef FOCUS_STEP_PIN
+    #define FOCUS_STEP_PIN 12  // STEP
+#endif
+#ifndef FOCUS_DIR_PIN
+    #define FOCUS_DIR_PIN 15  // DIR
+#endif
+#ifndef FOCUS_EN_PIN
+    #define FOCUS_EN_PIN 2  // Enable
+#endif
+
+#ifndef FOCUS_DRIVER_ADDRESS
+    #define FOCUS_DRIVER_ADDRESS 0b10  // Set by MS1/MS2 (MS1 LOW, MS2 HIGH)
+#endif
+
 // DISPLAY_TYPE_LCD_JOY_I2C_SSD1306 requires 3 analog inputs in Arduino pin numbering
 #ifndef LCD_KEY_SENSE_X_PIN
 //#define LCD_KEY_SENSE_X_PIN 34

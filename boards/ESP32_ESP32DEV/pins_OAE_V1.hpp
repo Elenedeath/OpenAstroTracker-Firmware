@@ -132,3 +132,17 @@
 #ifndef DEC_PULLEY_TEETH
     #define DEC_PULLEY_TEETH 1
 #endif
+
+// GPS Serial Port Configuration
+#ifndef GPS_SERIAL_PORT
+    #define GPS_SERIAL_PORT Serial2  // SoftwareSerial TX port
+#endif
+#ifndef DEC_TX_PIN
+    #define DEC_TX_PIN 34
+#endif
+#ifndef DEC_RX_PIN
+    #define DEC_RX_PIN 35
+#endif
+#ifndef DEC_DRIVER_ADDRESS
+    #define DEC_DRIVER_ADDRESS 0b01  // Set by MS1/MS2 (MS1 HIGH, MS2 LOW)
+#endif

@@ -92,7 +92,7 @@
 #endif
 
 #ifndef FOCUS_DRIVER_ADDRESS
-    #define FOCUS_DRIVER_ADDRESS 0b10  // Set by MS1/MS2 (MS1 LOW, MS2 HIGH)
+    #define FOCUS_DRIVER_ADDRESS 0b02  // Set by MS1/MS2 (MS1 LOW, MS2 HIGH)
 #endif
 
 // DISPLAY_TYPE_LCD_JOY_I2C_SSD1306 requires 3 analog inputs in Arduino pin numbering

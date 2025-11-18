@@ -136,7 +136,7 @@
     #endif
 
 #elif defined(BOARD_OAE_V1)
-    // Valid 
+    // Valid
 
 #else
     #warning Configuration does not support Focus. Use at own risk.

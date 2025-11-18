@@ -91,8 +91,20 @@
     #define FOCUS_EN_PIN 2  // Enable
 #endif
 
+#ifndef FOCUS_SERIAL_PORT_TX
+    #define FOCUS_SERIAL_PORT_TX 17  // SoftwareSerial TX port
+#endif
+#ifndef FOCUS_SERIAL_PORT_RX
+    #define FOCUS_SERIAL_PORT_RX 16  // SoftwareSerial RX port
+#endif
+
 #ifndef FOCUS_DRIVER_ADDRESS
-    #define FOCUS_DRIVER_ADDRESS 0b02  // Set by MS1/MS2 (MS1 LOW, MS2 HIGH)
+    #define FOCUS_DRIVER_ADDRESS 0b10  // Set by MS1/MS2 (MS1 LOW, MS2 HIGH)
+#endif
+
+// GPS configuration
+#ifndef GPS_SERIAL_PORT
+    #define GPS_SERIAL_PORT Serial2
 #endif
 
 // DISPLAY_TYPE_LCD_JOY_I2C_SSD1306 requires 3 analog inputs in Arduino pin numbering
